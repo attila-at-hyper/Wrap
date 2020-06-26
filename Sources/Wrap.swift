@@ -270,7 +270,7 @@ public extension WrapCustomizable {
 
 /// Extension providing a default wrapping implementation for `RawRepresentable` Enums
 public extension WrappableEnum where Self: RawRepresentable {
-    public func wrap(context: Any?, dateFormatter: DateFormatter?) -> Any? {
+    func wrap(context: Any?, dateFormatter: DateFormatter?) -> Any? {
         return self.rawValue
     }
 }
